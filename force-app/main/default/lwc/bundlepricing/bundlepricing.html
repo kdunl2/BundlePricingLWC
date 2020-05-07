@@ -6,7 +6,20 @@
             value={value}
             placeholder="Select The Bundle Program"
             options={programOptions}
-            onchange={handleChange} >
+            onchange={handleProgramChange} >
         </lightning-combobox>
     </div>
+    <lightning-card title="Create Bundle Pricing Units" icon-name="standard:record">
+        <div class="slds-grid">  
+            <lightning-combobox
+            class="slds-col station"
+            name="bundleStation"
+            label="Station"
+            value={station}
+            placeholder="Select The Bundle Station"
+            options={stationOptions}
+            onchange={handleStationChange} >
+            </lightning-combobox>
+        </div>
+    </lightning-card>
 </template>
