@@ -1,3 +1,12 @@
 <template>
-    "hi"
+    <div class="slds-m-around_medium program">
+        <lightning-combobox
+            name="bundleProgram"
+            label="Program"
+            value={value}
+            placeholder="Select The Bundle Program"
+            options={programOptions}
+            onchange={handleChange} >
+        </lightning-combobox>
+    </div>
 </template>
